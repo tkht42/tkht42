@@ -1,0 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: taimai <taimai@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/21 16:14:41 by taimai            #+#    #+#             */
+/*   Updated: 2023/08/21 22:57:14 by taimai           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_recursive_factorial(int nb)
+{
+	if (nb < 0)
+		return (0);
+	if (nb == 0)
+		return (1);
+	return (nb * ft_recursive_factorial(nb - 1));
+}
+
+// #include <stdio.h>
+// int	main()
+// {
+// 	for (int nb = -3; nb < 13; nb++)
+// 	{
+// 		printf("%2d: %10d\n", nb, ft_recursive_factorial(nb));
+// 	}
+// 	return (0);
+// }
